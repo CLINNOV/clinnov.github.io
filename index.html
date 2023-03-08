@@ -1,0 +1,750 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300&display=swap" rel="stylesheet">
+    <title>Quantlase Lab</title>
+    <style>
+      /* CSS styling */
+
+       
+    @media screen and (max-width: 800px) {
+     
+      nav {
+        background-color: #f4f4f4;
+        color: white;
+        display: flex;
+        flex-direction: column;
+        padding: 42px;
+      }
+
+      .image-text-section {
+        display: flex; 
+        flex-wrap: wrap; 
+        flex-direction: column;
+        justify-content: space-between;
+        margin: 50px 0; 
+      }
+
+      .section3 #invention {
+        display :flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        justify-content: center;
+        font-size: 14px; 
+        line-height: 1.5;
+        margin-top: 0;
+        margin-bottom: 20px; 
+      }
+       
+      #first{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+      }
+       
+      .inventors{
+        flex-direction: column;
+      }
+
+    
+      .section5 {
+        
+        display: flex;
+      justify-content: space-between;
+       margin-top: 50px;
+      flex-direction: column;
+       padding: -7px;
+  
+      }
+      
+      .imge-section {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .txt-overlay {
+      position: absolute;
+      top: 112px;
+      left: 141px;
+      width: 29%;
+      height: 50%;
+      z-index: 1;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      color: #fff;
+      text-align: center;
+      padding: 20px;}
+
+      .contact-form {
+        position: absolute;
+        top: 365px;
+        left: 119px;
+        width: 25%;
+        height: 74%;
+        z-index: 2;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        background-color: white;
+        color: #fff;
+        text-align: center;
+        padding: 55px 55px 42px 53px;
+        box-shadow: 0px 1px 10px rgb(0 16 0);
+    }
+    
+    .imag-container img {
+      width: 100%;
+      height: 1016px;
+      position: relative;
+      top: 176px;
+      left: -163px;
+      margin: -165px 0;
+    }
+     
+    #footer{
+     
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-direction: row;
+      } 
+    
+    
+    }
+
+      body {
+        font-family: Arial, sans-serif;
+        margin: 0;
+        padding: 0;
+      }
+      html{
+        scroll-behavior: smooth;
+    }
+    
+      header {
+        background-color: #333;
+        color: white;
+        padding: 20px;
+        text-align: center;
+      }
+      #img{
+        display: flex;
+    position: absolute;
+    left: 96px;
+    top: 11px;
+    height: 94px;
+        
+      }
+      nav {
+        background-color: #f4f4f4;
+        color: white;
+        padding: 42px;
+      }
+      nav ul {
+        list-style: none;
+        margin: 0;
+        padding: 0px 249px;
+      }
+      nav li {
+        display: inline-block;
+        margin: 0 10px;
+      }
+       
+      nav li a {
+        text-decoration: none;
+        color: black;
+      }
+      nav li a:hover{
+        color:#0860a3;
+      }
+
+      main {
+        padding: 20px;
+      }
+      section {
+        margin: 69px 0;
+        padding: 20px;
+      }
+   
+      .hero-image {
+        background-image: url("labpic.jpg");
+        height: 400px;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        position: relative;
+      }
+    .text-block{
+        font-size: 10px;
+    }
+      .color-block {
+        display:flex;
+        flex-direction: column;
+        justify-content:baseline;
+       align-items: center;
+        position: absolute;
+        top: 450px;
+        left: 0;
+        bottom: 0;
+        width: 800px; 
+        height:100px;
+         background-color: rgb(0, 102, 255); /* adjust to desired color */
+        z-index: 1;
+        color:white;
+        
+      }
+      .image-text-section {
+        display: flex; 
+        flex-wrap: wrap; 
+        justify-content: space-between;
+        margin: 50px 0; 
+      }
+      
+      .image-container {
+        flex-basis: 50%; 
+      }
+      
+      .image-container img {
+        display: block; 
+        width: 100%; 
+        
+      }
+      
+      .text-container {
+        flex-basis: 45%;
+        padding: 66px 0; 
+      }
+      
+      .text-container h2 {
+        font-size: 28px; 
+        margin-top: 0; 
+      }
+      
+      .text-container p {
+        font-size: 14px; 
+        line-height: 24px;
+        margin-top: 0;
+        margin-bottom: 20px; 
+        
+      }
+      
+      h2{
+        color :rgb(0, 102, 255); 
+      }
+
+      .section3{
+        background-image: url("invention.jpg");
+        height: 400px;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        position: relative;
+        color:white;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        height:600px;
+        padding:10px 0;
+      }
+
+      .section3 #invention {
+        display :flex;
+        flex-direction: column;
+        justify-content: center;
+        font-size: 14px; 
+        line-height: 1.5;
+        margin-top: 0;
+        margin-bottom: 20px; 
+      }
+      #invention p {
+        display: block;
+        margin: auto;
+        width: 700px;
+        font-size: 12px;
+      }
+      #invention h1{
+        font-size:30px;
+      }
+
+      .intersection-image {
+        position: relative;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -40%);
+        z-index: 1;
+      }
+      
+      .section4 {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+      
+      }
+      
+      #first{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+      }
+
+      .text {
+
+        flex-basis: 50%;
+       
+        font-size: 13px;
+        line-height: 24px;
+        padding: 78px;
+      }
+      .inventors{
+        flex-direction:row;
+      }
+      .image {
+        flex-basis: 50%;
+      }
+      
+      .image img {
+        width: 82%;
+        height: 581px;
+        padding: 37px 51px;
+      }
+      
+      .sub-heading{
+        color:rgb(0, 102, 255); 
+        font-size: 13px;
+      }
+
+      .section5 {
+        display: flex;
+    justify-content: space-between;
+    margin-top: 50px;
+    flex-direction: row;
+    padding: -7px;
+      }
+      
+      .quote-block {
+        flex-basis: 50%;
+    padding: 44px 10px;
+    background-color: #faf7f7;
+    border-radius: 38px;
+    height: 310px;
+    margin: 52px 14px;
+    width: 469px;
+      }
+      
+      blockquote {
+        font-style: italic;
+        color:rgb(167, 164, 164);
+        font-size: 13px;
+        line-height: 24px;
+        
+      }
+      
+      
+      .quote::after {
+        content: '"';
+      }
+      
+       .img-block{
+        display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: -11px 5px;
+       }
+
+       .img-block img{
+        height: 40px;
+       }
+      
+       .subscript-block{
+        display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: -11px; 
+       }
+       
+       .heading h2{
+        position: relative;
+        left: 38%;
+        top: 0;
+        padding: 3px;
+       }
+       .subscript-block h2 {
+        font-size: 16px;
+        font-weight: bold;
+       }
+
+       .imge-section {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+      }
+      
+      .txt {
+        flex: 1;
+        padding: 0 36px;
+        margin: 47px;
+
+      }
+      
+      .txt h2 {
+        font-size: 24px;
+        margin-bottom: 10px;
+      }
+      
+      .txt p {
+        font-size: 13px;
+        line-height: 24px;
+      }
+      
+      .imge {
+        position: relative;
+        top: 6px;
+        right: -40px;
+        
+      }
+      
+      .imge img {
+        display: block;
+        width: 606px;
+        height: 430px;
+      }
+      
+     #link{
+        text-decoration: none;
+        color: #0860a3;
+        font-size: small;
+     }
+     .imag-section {
+      position: relative;
+    }
+    
+    .contact-form {
+      position: absolute;
+    top: -31px;
+    left: 736px;
+    width: 23%;
+    height: 80%;
+    z-index: 2;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+    color: #fff;
+    text-align: center;
+    padding: 48px 55px 103px 53px;
+    box-shadow: 0px 1px 10px rgb(0 16 0);
+}
+
+.contact-form p{
+  font-size: 13px;
+  line-height: 24px;
+  color: #333;
+  position: relative;
+  top: -41px;
+  left: -1%;
+}
+    
+    .contact-form h2 {
+      margin-top: 0;
+      float: left;
+      position: relative;
+      left: -92px;
+      top: 0;
+    }
+    
+    .contact-form label,
+    .contact-form input,
+    .contact-form textarea,
+    .contact-form button {
+      width: 100%;
+      box-sizing: border-box;
+      margin-top: 10px;
+      margin-bottom: 10px;
+    }
+    
+    .contact-form label {
+      font-weight: bold;
+    }
+    
+    .contact-form input,
+    .contact-form textarea {
+      padding: 11px;
+    border-radius: 0;
+    border: black;
+    background-color: #E9E5E5;
+    width: 307px;
+    }
+    
+    .contact-form button {
+      background-color: #2e5ce1;
+      color: #fff;
+      padding: 10px;
+      border-radius: 5px;
+      border: none;
+      cursor: pointer;
+    }
+    
+    .imag-container {
+      position: relative;
+    }
+    
+    .imag-container img {
+      width: 139%;
+    height: 1016px;
+    position: relative;
+    top: 176px;
+    left: -163px;
+    margin: -165px 0;
+    }
+    
+    .txt-overlay {
+      position: absolute;
+      top: 112px;
+      left: 141px;
+      width: 29%;
+      height: 50%;
+      z-index: 1;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      color: #fff;
+      text-align: center;
+      padding: 20px;
+    }
+    
+    .txt-overlay h2 {
+      margin-top: 0;
+    }
+    
+    .txt-overlay p {
+      margin-bottom: 0;
+      font-size: 13px;
+      line-height: 24px;
+      font-weight: medium;
+    }
+    
+    #pic{
+      height: 150px;
+      width: 358px;
+      position: relative;
+      top: -615px;
+      left: 159px;
+    }
+
+
+    #button{
+      float: left;
+    padding: 8px;
+    align-items: center;
+    width: 81px;
+    margin: 9px 15px;
+    }
+
+
+    #message{    
+      padding: 43px 0;
+        }
+
+
+    #footer{
+     
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: row;
+    }
+
+    #footer p{
+      color: white;
+      font-weight: bolder;
+      font-size: 15px;
+      position: absolute;
+      bottom: -131%;
+      left: -6%;
+    }
+   
+
+    
+    </style>
+  </head>
+  <body>
+    <div id="home">
+        <nav>
+            <div id="img">
+                <img src="pic.png" alt="" srcset="">
+            </div>
+            <ul>
+              <li><a href="#home">Home</a></li>
+              <li><a href="#about">About lab</a></li>
+              <li><a href="#invention">About invention</a></li>
+              <li><a href="#research">Research Team</a></li>
+              <li><a href="#ihc">IHC</a></li>
+              <li><a href="#contact">Contact Us</a></li>
+            </ul>
+          </nav>
+          
+        <div class="hero-image">
+        </div>
+    </div>
+      
+        
+    <div class="color-block">
+        <div class ="text-block">
+            <h1>Quantlase Lab developed the novel equipment Al Ain 019 </h1>
+            <h3>which enables ultrafast mass screenings for Covid-19 Virus</h3>
+        </div>
+       
+    </div>
+    <main>
+        <section class="image-text-section">
+            <div class="image-container">
+              <img src="about.jpg" alt="Image description">
+            </div>
+            <div class="text-container" id="about">
+              <h2>About The Lab</h2>
+              <p>QuantLase Lab, a subsidiary of International Holdings Company (IHC) in Abu Dhabi, is a research and innovation laboratory focused on developing sustainable solutions for the UAE community. The research contributes to the realization of the UAE 2021 vision where innovation, science, research, and technology form the basis of a productive and competitive knowledge-based economy.
+                <br>
+                From medical innovation to research, our latest project focuses on the recent developments in countering the COVID-19 pandemic. We introduce a scientific breakthrough of a rapid coronavirus laser testing technology, which uses an appealing and user-friendly technique called the Diffractive Phase Interferometry (DPI). Compared to other tests, DPI is able to give a signature of the infection within a few seconds. The research is solidly based on deformational changes in cell structure of the virus-infected blood.</p>
+            </div>
+          </section>
+          
+      <section class="section3">
+        <div  id="invention" >
+            <h3> Ultrafast Probing of Virus - based on DPI</h3>
+            
+            <h1 >Al Ain 019 Invention</h1>
+            <p>
+                QuantLase Lab developed the novel equipment Al Ain 019, which enables ultrafast mass screenings for COVID-19 Virus, with test results available in seconds, allowing testing on a wider scale. Using a CMOS detector, this breakthrough’s ability in mass-scale screening’ will change the whole dimension of tracing, and the speed with which workforces can be approached.
+                <br>
+                In terms of early stage detection, Al Ain 019’s laser-based DPI [Diffractive Phase Interferometry] technique is capable of detect ing a viral infection as soon as the blood cell gets infected. Furthermore, the advanced artificial intelligence (Al) image-analysis model used in the diagnostic system predicts the outcome of each image with precision, speed and scale.
+                <br>
+                As of May 2020, Al Ain 01 as already been used to conduct more than 6,000 tests, with 85 to 90 percent accuracy.</p>
+            
+        </div>
+      </section>
+      <img src="invention1.png" alt="Image" class="intersection-image">
+
+      
+        <div class="heading" id="research"> 
+            <h2>Our Research Team</h2>
+            </div>
+
+      <div class="section4" >
+        <div class="inventors" id ="first">
+            <div class="text">
+                <h2>Dr. Pramod Kumar</h2>
+                  
+                  <h2 class="sub-heading">Research Team Leader at Quantlase Lab</h2>
+                <p>Dr. Pramod Kumar heads the research team at QuantLase Lab. His research interests are in the field of ultrafast nonlinear photonics covering various fundamental and applicative aspects, in particular the understanding, control and utilization of ultrashort pulse to probe spatiotemporal complex nonlinear dynamical behavior determining the performance of nonlinear photonics devices like Photonic Integrated Circuit on the chip scale, diode laser with ultra-short laser pulse injection, optical parametric oscillators, delay- coupled diode lasers system, nanostructures of semiconductors. Dr. Kumar’s focus is on the study and coherent manipulation of light through photonic structures. Moreover, he has been working on tailoring a non-deterministic white chaotic entropy source based on Optical Perturbative Interferometry for the QKD applications.</p>
+              </div>
+              <div class="image">
+                <img src="first.png" alt="Image">
+              </div>
+             
+        </div>
+       
+        <div class="inventors" id ="first">
+            <div class="text">
+                <h2>Dr. Mohammed Firoz Khan</h2>
+                  
+                  <h2 class="sub-heading"> Experimental Quantum Physicist</h2>
+                <p>Dr. Mohammad Firoz Khan is an Experimental Quantum Physicist. He has extensive knowledge in the field of microscopy and spectroscopy (i.e. florescence correlation spectroscopy, single lab microscopy, and ultrafast fluorescence spectroscopy). He has a Bachelor of Scise in Physics from Aligarh Muslim University, and a PhD in Philosophy from Jawaharlal Nehru University in India.</p>
+              </div>
+              <div class="image">
+                <img src="second.png" alt="Image">
+              </div>
+          </div>
+          
+    
+          <div class="section5">
+            <div class="quote-block">
+              <blockquote>
+                We are always following innovations related to the early and rapid detection of COVID-19. The government is keen on supporting initiatives that help the healthcare system in the UAE. Health officials have been closely monitoring the progress of trials with QuantLase Lab in order to test this equipment. We are proud to see a technology that works and that will help protect our people better.
+              </blockquote>
+              <div class="img-block">
+                <img src="inverted-commas.png" alt="" srcset="">
+              </div>
+              <div class="subscript-block">
+                <h2>ABDULRAHMAN BIN MOHAMMED AL OWAIS</h2>
+                <blockquote>Minister of Health and Prevention</blockquote>
+              </div>
+             
+              
+            </div>
+            <div class="quote-block">
+              <blockquote>
+                Al Ain 019’s laser-based DPI technique, based on optical- phase modulation, is able to give a signature of infection within a few seconds. What’s more, it is user-friendly, non- invasive and low-cost. The device is suitable for use not only in hospitals and public places like cinemas and shopping malls, but with a little hands-on training it can be used for in- hou testing and monitoring. We believe it will be a game- changer in tackling the spread of the coronavirus.
+              </blockquote>
+              <div class="img-block">
+                <img src="inverted-commas.png" alt="" srcset="">
+              </div>
+              <div class="subscript-block">
+                <h2>DR. PRAMOD KUMAR</h2>
+                <blockquote>Research Team Leader at QuantLase Lab</blockquote>
+              </div>
+             
+            </div>
+          </div>
+          
+          <section class="imge-section">
+            <div class="txt" id="ihc">
+              <h2>About International Holdings Company</h2>
+              <p>International Holdings Company, PJSC, has evolved from one company primarily involved in the aquaculture industry into an investment holding company featuring various operating assets. Formerly known as International Fish Farming Holding Co PJSC, the company engages in the investment and development of food and feed supply business. It operates through the following segments: district cooling: contracting and real estate; digital; industrial; food, and research and capital. The company, which is listed on the Abu Dhabi Stock Exchange (ADX), was founded on November 23, 1998, and is headquartered in Abu Dhabi, UAE.</p>
+              <br>
+              <a href="https://ihcuae.com" id="link">https://ihcuae.com</a>
+            </div>
+            <div class="imge" >
+              <img src="DSC_0215.JPG" alt="anonymous">
+            </div>
+          </section>
+           
+          
+          <div class="imag-section" id="contact">
+            <div class="contact-form">
+              <p>We would love to hear from you. Send us a message and we will respond as soon as possible.</p>
+              <h2>Contact Us</h2>
+              <form>
+                <label for="name"></label>
+                <input type="text" id="name" placeholder="Name" required>
+                <label for="email"></label>
+                <input type="email" id="email" placeholder="Email" required>
+                <label for="subject"></label>
+                <input type="text" id="subject" placeholder="Subject" required>
+                <label for="Comapany"></label>
+                <input type="text" id="Company" placeholder="Company" required>
+                <label for="message"></label>
+                <textarea id="message" placeholder="Message" required></textarea>
+                <button type="submit" id="button">Submit</button>
+              </form>
+            </div>
+            <div class="imag-container">
+              <img src="labpic.jpg" id="labpic" alt="Image description">
+              <div class="logopic"><img src="pic.png" id="pic"alt="" class="s"></div>
+              <div class="txt-overlay"> 
+                <p>QuantLase Lab, a subsidiary of International Holdings Company (IHC) in Abu Dhabi, is a research and innovation laboratory focused on developing sustainable solutions for the UAE community.</p>
+                <div id="footer">
+                  <p>Copyright 2022 Quantlase Lab. All Rights Reserved</p>
+                </div>
+              </div>
+             
+            </div>
+          
+           
+          </div>
+          
+          
+        
+        
+          </body>
+        </html>
