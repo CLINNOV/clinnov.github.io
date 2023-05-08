@@ -1,2 +1,1 @@
-# InternShip
-## Link: https://kuldeepsaini23.github.io/InternShip/
+Website site of Chakraborty and Lahkar Innovations Pvt. Ltd.
