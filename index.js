@@ -9,7 +9,7 @@ button.addEventListener("click", async() => {
 
   if (firstName.length > 0 || lastName.length > 0 || email.length > 0 || message.length > 0) {
     try {
-      const response = await fetch(
+      const fetchResponse = await fetch(
         `https://www.grupverse.com/companywebsitemsg?name=${firstName} ${lastName}&email=email&msg=message&completed=false`, {
           method: "POST"
         }
